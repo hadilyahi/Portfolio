@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Nav from "./Nav";
 import { Button } from "./ui/button";
+import MobileNav from "./MobileNav";
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         {/*logo*/}
         <Link href="/">
-          <h1 className="text-4xl font-semibold">Hadil yahi</h1>
+        <h1 className=' text-2xl font-semibold'>Hadil <span className='text-accent'>yahi</span></h1>
         </Link>
         {/*desktop nav & hire me button*/}
         <div className="hidden xl:flex items-center gap-8">
@@ -18,7 +19,9 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="xl:hidden">mobile nav</div>
+        <div className="xl:hidden">
+          <MobileNav/>
+        </div>
       </div>
     </header>
   );
