@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-    <main>Home page</main>
+    <main className="font-jetBrainsMono">Home page</main>
   );
 }
