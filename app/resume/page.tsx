@@ -18,7 +18,7 @@ import { IoStarOutline } from "react-icons/io5"; // Redux
 import { MdSearch } from "react-icons/md"; // Axios
 import { title } from "process";
 import { describe } from "node:test";
-
+// about data
 const about = {
   title: "About me ",
   description:
@@ -66,6 +66,10 @@ const about = {
     },
   ]
   };
+// experience data 
+ const experience ={
+  icon :'/assets/resume/badge.svg'
+ }
 
 const Resume = () => {
   return <div>Resume page</div>;
