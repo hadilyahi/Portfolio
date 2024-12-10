@@ -1,11 +1,9 @@
 "use client";
 import { BsArrowDownRight } from "react-icons/bs";
 import Link from "next/link";
-import { motion, MotionProps } from "framer-motion";
+import { motion} from "framer-motion";
 
-const MotionDiv = motion.div as React.ElementType<
-  MotionProps & React.HTMLAttributes<HTMLDivElement>
->;
+
 const services = [
   {
     num: "01",
@@ -41,7 +39,7 @@ const Services = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
-        <MotionDiv
+        <motion.div
           className="grid grid-cols-1 gap-[60px] md:grid-cols-2 "
           initial={{ opacity: 0 }}
           animate={{
@@ -73,7 +71,7 @@ const Services = () => {
               </div>
             );
           })}
-        </MotionDiv>
+        </motion.div>
       </div>
     </section>
   );

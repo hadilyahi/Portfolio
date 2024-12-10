@@ -1,4 +1,4 @@
-import { motion, MotionProps } from "framer-motion";
+import { motion} from "framer-motion";
 
 
 const stairAnimation = {
@@ -20,7 +20,6 @@ const reverseIndex = (index: number) => {
 };
 
 
-const MotionDiv = motion.div as React.ElementType<MotionProps & React.HTMLAttributes<HTMLDivElement>>;
 
 
 const Stairs = () => {
@@ -28,7 +27,7 @@ const Stairs = () => {
     <>
       {/* motion divs */}
       {Array.from({ length: 6 }).map((_, index: number) => (
-        <MotionDiv
+        <motion.div
           key={index}
           variants={stairAnimation}
           initial="initial"

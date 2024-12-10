@@ -1,10 +1,10 @@
 "use client";
 
-import { AnimatePresence, motion, MotionProps } from "framer-motion";
+import { AnimatePresence, motion} from "framer-motion";
 import { usePathname } from "next/navigation";
 
 
-const MotionDiv = motion.div as React.ElementType<MotionProps & React.HTMLAttributes<HTMLDivElement>>;
+
 
 interface PageTransitionProps {
   children: React.ReactNode;
@@ -16,7 +16,7 @@ const PageTransition = ({ children }: PageTransitionProps) => {
   return (
     <AnimatePresence>
         <div key={pathname}>
-      <MotionDiv
+      <motion.div
         initial={{ opacity: 1 }}
         animate={{
           opacity: 0,
