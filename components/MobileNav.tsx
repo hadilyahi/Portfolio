@@ -4,6 +4,7 @@ import { DialogTitle } from "@radix-ui/react-dialog";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { CiMenuFries } from "react-icons/ci";
+import { Button } from "./ui/button";
 
 const links = [
   {
@@ -53,6 +54,11 @@ const MobileNav = () => {
               {link.name}
             </Link>
           ))}
+           <div className=" xl:flex items-center gap-8">
+          <Link href="/contact">
+          <Button>Contact me</Button>
+          </Link>
+        </div>
         </nav>
       </SheetContent>
     </Sheet>
